@@ -1,12 +1,13 @@
 :root {
-    --text-color:hsl(0, 0%, 59%) ;
+    --text-color:hsl(0, 0%, 5%) ;
   }
 
         
 
 body {
     font-family: 'Kumbh Sans';
-    font-weight: 700;    
+    font-weight: 700;
+    margin: 0px;
 }
 /* ########BACKGROUND########### */
 .main{
@@ -20,7 +21,7 @@ body {
     background-color: hsl(185, 75%, 39%);
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
-    background-position: -20vh -26vw, 52vw 40vh;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
     
 
@@ -41,8 +42,9 @@ body {
 
 .card-bootom {
     position: relative;
-    top: 31px;
-    left: 58px;
+    margin-left: 73px;
+    margin-top: 34px;
+    margin-bottom: -26px;
     height: 122px;
 }
 
@@ -60,14 +62,14 @@ body {
     border-top-width: thin;
 }
 
-/* ###########Picture################### */
+/* ###########Picture################## */
 
 
 #picture>img {
     border-radius: 50%;
     position: absolute;
     margin-top: 90px;
-    margin-left: 113px;
+    margin-left: 124px;
     border-style: solid;
     border-color: white;
     border-width: thick;
@@ -98,8 +100,6 @@ p {
     .card {
     width: 90%;
     }
-    .main {
-        background-position: -133vh -152vw, 52vw 40vh;
-    }
+
 }
 
