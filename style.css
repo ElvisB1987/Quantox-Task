@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --text-color:hsl(0, 0%, 5%) ;
   }
@@ -98,3 +99,110 @@ p {
 
 
 
+=======
+:root {
+    --text-color:hsl(0, 0%, 59%) ;
+  }
+
+        
+
+body {
+    font-family: 'Kumbh Sans';
+    font-weight: 700;    
+}
+/* ########BACKGROUND########### */
+.main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -20vh -26vw, 52vw 40vh;
+}
+    
+
+/* ############CARD################## */
+
+.card {
+    background-color: white;
+    width: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-top {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-bootom {
+    position: relative;
+    top: 31px;
+    left: 58px;
+    height: 122px;
+}
+
+
+
+#age {
+    font-size: 18px;
+    color:var(--text-color);
+}
+
+.footer {
+    height: 78px;
+    border-top: #80808066;
+    border-top-style: solid;
+    border-top-width: thin;
+}
+
+/* ###########Picture################### */
+
+
+#picture>img {
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 113px;
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+}
+
+span {
+    font-size: 12px;
+    color:var(--text-color);
+    font-weight: 400;
+}
+
+hr {
+    color:var(--text-color);
+}
+
+p {
+    font-size: 18px;
+    margin-left: 12%;
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .card {
+    width: 90%;
+    }
+    .main {
+        background-position: -133vh -152vw, 52vw 40vh;
+    }
+}
+
+>>>>>>> 47b679666077d1827ac7ed11987cb05876a25a07
