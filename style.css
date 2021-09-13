@@ -1,12 +1,16 @@
 
 :root {
     --text-color:hsl(0, 0%, 59%);
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%)
 
   }
 body {
     font-family: 'Kumbh Sans';
     font-weight: 700;
     margin: 0px;
+    color: var(--Very-dark-desaturated-blue);
 }
 /* ########BACKGROUND########### */
 .main{
@@ -34,17 +38,23 @@ body {
 }
 
 .card-top {
+    background-image: url(./images/bg-pattern-card.svg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    height: 140px;
 }
 
 .card-bootom {
-    position: relative;
-    margin-left: 73px;
+    display: flex;
+    /* position: relative; */
+    /* margin-left: 73px; */
     margin-top: 34px;
     margin-bottom: -26px;
     height: 122px;
+    /* flex-direction: row; */
+    /* align-content: center; */
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -55,20 +65,37 @@ body {
 }
 
 .footer {
+    display: flex;
     height: 78px;
     border-top: #80808066;
     border-top-style: solid;
     border-top-width: thin;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
 }
 
+.info {
+    text-align: center;
+}
+
+label {
+    font-size: 12px;
+    color:var(--text-color);
+    font-weight: 400;
+}
 /* ###########Picture################## */
 
+#picture {
+    display: flex;
+    justify-content: space-around;
+}
 
 #picture>img {
     border-radius: 50%;
     position: absolute;
     margin-top: 90px;
-    margin-left: 122px;
     border-style: solid;
     border-color: white;
     border-width: thick;
@@ -81,18 +108,9 @@ span {
     font-weight: 400;
 }
 
-hr {
-    color:var(--text-color);
-}
 
-p {
-    font-size: 18px;
-    margin-left: 12%;
-    display: inline-block;
-    padding: 5px;
-    font-weight: bold;
-    text-align: center;
-}
+
+
 
 /* ###########RESPONSIVE################## */
 
@@ -105,9 +123,8 @@ p {
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .card {
-        width: 350px;
+        width: 400px;
     }
-  
 }
